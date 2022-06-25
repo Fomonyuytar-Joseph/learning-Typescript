@@ -1,3 +1,6 @@
-const character ='mario'
+// explicit types
+let character: string;
+let age:number;
+let isLoggedIn: boolean;
 
-console.log(character)
+
