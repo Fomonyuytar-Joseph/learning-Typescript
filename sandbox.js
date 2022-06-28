@@ -1,16 +1,20 @@
+// any types
+var age = 34;
+age = true;
+console.log(age);
 // explicit types
-var character;
-var age;
-var isLoggedIn;
-//arrays
-var ninjas = [];
-ninjas.push('joe');
-var mixed = [];
-mixed.push('hello');
-mixed.push(20);
-mixed.push(true);
-console.log(mixed);
-//union types
-var uid;
-uid = '123';
-uid = 123;
+// let character: string;
+// let age:number;
+// let isLoggedIn: boolean;
+// //arrays
+// let ninjas: string[]=[];
+// ninjas.push('joe')
+// let mixed :(string | number | boolean )[]=[];
+// mixed.push('hello')
+// mixed.push(20)
+// mixed.push(true)
+// console.log(mixed)
+// //union types
+// let uid : string|number
+// uid='123'
+// uid=123
