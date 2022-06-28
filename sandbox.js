@@ -2,6 +2,15 @@
 var age = 34;
 age = true;
 console.log(age);
+age = 'Joseph';
+console.log(age);
+var mixed = [];
+mixed.push(5);
+mixed.push('Joseph');
+console.log(mixed);
+var ninja;
+ninja = { name: 'Joseph', age: 25 };
+console.log(ninja);
 // explicit types
 // let character: string;
 // let age:number;

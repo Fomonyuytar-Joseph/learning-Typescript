@@ -2,7 +2,20 @@
 // any types
 let age : any =34;
 age=true
-console.log(age)
+console.log(age);
+age='Joseph';
+console.log(age);
+
+let mixed : any[]=[];
+mixed.push(5)
+mixed.push('Joseph')
+
+console.log(mixed)
+
+let ninja :{name:any ,age:any};
+
+ninja={name:'Joseph', age:25}
+console.log(ninja)
 
 
 
