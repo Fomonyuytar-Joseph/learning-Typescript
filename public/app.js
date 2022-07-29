@@ -1,4 +1,7 @@
 "use strict";
+//Working with DOM
+const anchor = document.querySelector('a');
+console.log(anchor);
 // //TYPE ALIASES
 // type StringorNum = string | number;
 // type objWithName = {name:string ,uid:StringorNum}
