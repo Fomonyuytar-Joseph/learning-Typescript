@@ -1,4 +1,16 @@
+//TYPE ALIASES
+type StringorNum = string | number;
+type objWithName = {name:string ,uid:StringorNum}
 
+
+const logDetails = (uid: StringorNum , item: string)=>{
+    console.log(`${item} has a ui of ${uid}`)
+}
+
+const greet =(user:objWithName) =>{
+    console.log(`${user.name} says hi`);
+    
+}
 
 
 //FUNCTIONS

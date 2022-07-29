@@ -1,4 +1,10 @@
 "use strict";
+const logDetails = (uid, item) => {
+    console.log(`${item} has a ui of ${uid}`);
+};
+const greet = (user) => {
+    console.log(`${user.name} says hi`);
+};
 //FUNCTIONS
 // let greet : Function
 // greet= ()=>{
