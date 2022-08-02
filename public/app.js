@@ -1,30 +1,25 @@
 import { Invoice } from './classes/Invoice.js';
-const invOne = new Invoice("Joseph", "Momo transaction", 2000);
-const invTwo = new Invoice("Christy", "Credit Transfer", 5000);
-let invoices = [];
-invoices.push(invOne);
-invoices.push(invTwo);
-invoices.forEach(inv => {
-    console.log(inv.client, inv.amount, inv.details);
-});
-// console.log( invOne.format() , invOne)
+import { Payment } from './classes/Payments.js';
 // //Working with DOM
-// const form = document.querySelector('.new-item-form') as HTMLFormElement
+const form = document.querySelector('.new-item-form');
 // // console.log(form.children)
-// //inputs
-// const type= document.querySelector("#type") as HTMLSelectElement
-// const tofrom= document.querySelector("#tofrom") as HTMLInputElement
-// const details= document.querySelector("#details") as HTMLInputElement
-// const amount= document.querySelector("#amount") as HTMLInputElement
-// form.addEventListener('submit',(e:Event)=>{
-//     e.preventDefault()
-//     console.log(
-//         type.value,
-//         tofrom.value,
-//         details.value,
-//         amount.valueAsNumber
-//     )
-// })
+//inputs
+const type = document.querySelector("#type");
+const tofrom = document.querySelector("#tofrom");
+const details = document.querySelector("#details");
+const amount = document.querySelector("#amount");
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    let doc;
+    if (type.value === 'invoice') {
+        doc = new Invoice(tofrom.value, details.value, amount.valueAsNumber);
+    }
+    else {
+        doc = new Payment(tofrom.value, details.value, amount.valueAsNumber);
+    }
+    console.log(doc);
+    console.log(type.value, tofrom.value, details.value, amount.valueAsNumber);
+});
 //interface
 // interface isPerson {
 //     name:string;
@@ -96,3 +91,20 @@ invoices.forEach(inv => {
 // let uid : string|number
 // uid='123'
 // uid=123
+// let docOne:HasFormatter;
+// let docTwo:HasFormatter;
+// docOne= new Invoice("Joseph","webwork",3000);
+// docTwo= new Payment("Max","technicaian work",3000);
+// let docs:HasFormatter[]=[];
+// docs.push(docOne);
+// docs.push(docTwo);
+// console.log(docs)
+// const invOne = new Invoice("Joseph" , "Momo transaction", 2000)
+// const invTwo = new Invoice("Christy" , "Credit Transfer", 5000)
+// let invoices : Invoice[]=[];
+// invoices.push(invOne)
+// invoices.push(invTwo)
+// invoices.forEach(inv => {
+//     console.log(inv.client , inv.amount, inv.details)
+// })
+// console.log( invOne.format() , invOne)
