@@ -1,4 +1,5 @@
 import {Invoice} from './classes/Invoice.js'
+import { Payment } from './classes/Payments.js';
 
 const invOne = new Invoice("Joseph" , "Momo transaction", 2000)
 const invTwo = new Invoice("Christy" , "Credit Transfer", 5000)
@@ -44,6 +45,35 @@ invoices.forEach(inv => {
 // })
 
 
+//interface
+// interface isPerson {
+//     name:string;
+//     age:number;
+//     speak(a:string):void;
+//     spend(a:number):number
+// }
+
+// const me:isPerson={
+//     name:"Joseph",
+//     age:23,
+//     speak(text:string):void{
+//         console.log(text)
+//     },
+//     spend(amount:number): number{
+//         console.log('I spent ',amount)
+//         return amount
+//     }
+
+// }
+
+// const greetPerson= (person:isPerson)=>{
+//     console.log('hello', person.name);
+    
+// }
+
+// greetPerson(me)
+
+// console.log(me);
 
 
 
