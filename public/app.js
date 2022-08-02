@@ -48,6 +48,13 @@ form.addEventListener('submit', (e) => {
 // }
 // greetPerson(me)
 // console.log(me);
+//GENERICS 
+const addUID = (obj) => {
+    let uid = Math.floor(Math.random() * 100);
+    return Object.assign(Object.assign({}, obj), { uid });
+};
+let docOne = addUID({ name: "Joseph", age: 12 });
+console.log(docOne.name);
 // //TYPE ALIASES
 // type StringorNum = string | number;
 // type objWithName = {name:string ,uid:StringorNum}
