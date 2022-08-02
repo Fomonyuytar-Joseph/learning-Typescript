@@ -4,7 +4,7 @@ export class ListTemplate{
 
     constructor(private container : HTMLUListElement){}
 
-    render(item:HasFormatter ,heading:string ,pos: 'start' | 'stop'){
+    render( item:HasFormatter ,heading:string , pos: 'start' | 'end'){
 
         const li = document.createElement('li')
 
@@ -19,11 +19,11 @@ export class ListTemplate{
 
         if(pos === 'start'){
 
-            this.container.prepend('li')
+            this.container.prepend(li)
 
         }
         else{
-            this.container.append('li')
+            this.container.append(li)
         }
     }
 }

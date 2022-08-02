@@ -11,10 +11,10 @@ export class ListTemplate {
         p.innerText = item.format();
         li.append(p);
         if (pos === 'start') {
-            this.container.prepend('li');
+            this.container.prepend(li);
         }
         else {
-            this.container.append('li');
+            this.container.append(li);
         }
     }
 }
