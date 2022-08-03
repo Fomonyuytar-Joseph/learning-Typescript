@@ -77,15 +77,21 @@ form.addEventListener('submit',(e:Event)=>{
 
 //GENERICS 
 
-const addUID = <T extends object>(obj:T)=>{
+// const addUID = <T extends object>(obj:T)=>{
 
-    let uid = Math.floor(Math.random() * 100 )
-    return {...obj , uid}
+//     let uid = Math.floor(Math.random() * 100 )
+//     return {...obj , uid}
 
+// }
+// let docOne= addUID({name:"Joseph", age:12})
+
+// console.log(docOne.name)
+
+
+interface Resource <T>{
+
+    
 }
-let docOne= addUID({name:"Joseph", age:12})
-
-console.log(docOne.name)
 
 
 
